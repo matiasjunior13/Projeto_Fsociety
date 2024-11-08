@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
 /* ================ INDEX ===================== */
+
 * {
-    margin: 0,5px;
+    margin: 0.5px;
     padding: 0;
     background-color: black;
     list-style: none;
@@ -23,7 +24,7 @@ nav {
 ul { 
     display: flex;
     width: 90%;
-    justify-content:center;
+    justify-content:space-between;
 }
 
 li { 
@@ -168,7 +169,6 @@ li:hover {
 }
 
 /* ================ INTEGRANTES ===================== */
-   
 
 .integrantes-cards-container {
     width: 100%;
@@ -178,18 +178,18 @@ li:hover {
 }
 
 .cards-content {
-    width: 150%;
+    width: 92%;
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    row-gap: 30px;
-    column-gap: 60px;
+    row-gap: 40px;
+    column-gap: 40px;
 }
 
 .card{
     width: 100%;
     height: 400px;
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 45% 0%;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
@@ -333,16 +333,14 @@ li:hover {
 /* ================ FOOTER ===================== */
 footer {
     color: red;
-    height: 300px;
-    margin-top: 50px;
-    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items:center;
     text-align: center;
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
-
 span{
     color: red;
     font-family: 'Kdam Thmor Pro', sans-serif;
@@ -353,11 +351,11 @@ span{
 }
 
 .footer-list{
-    display: block;
+    display: flex;
     flex-direction: column;
     align-items: center;
-
 }
+
 /* ================ RECRUTAMENTO ===================== */
 
 .form-recrutamento {
@@ -379,7 +377,7 @@ span{
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
     
-    /* Estilo das labels */
+/* Estilo das labels */
 label {
     font-size: 16px;
     font-weight: bold;
@@ -389,7 +387,7 @@ label {
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
     
-    /* Estilização dos inputs de texto */
+/* Estilização dos inputs de texto */
 .input-text {
     width: 100%;
     padding: 10px;
@@ -404,17 +402,17 @@ label {
 }
     
 .input-text:focus {
-    border-color: #4CAF50;
+    border-color: red;
     outline: none;
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
     
-    /* Estilização do input de checkbox */
+/* Estilização do input de checkbox */
 .input-checkbox {
     margin-bottom: 10px;
 }
     
-    /* Estilização do textarea */
+/* Estilização do textarea */
 .input-textarea {
     width: 100%;
     padding: 10px;
@@ -454,13 +452,17 @@ label {
 
 
 /* ================ MEDIA QUERY ===================== */
-
-@media(max-widht:768px){
-    .footer-navigation{
-        display: block;
-        flex-direction: column;
+@media (max-width:768px) {
+    *{
+        background-color: black;
     }
-    
+    .footer-navigation{
+        list-style: none;
+        padding: 0;
+        margin: 55px;
+        display: flex;
+        justify-content: center;
+    }
     nav {
         display: none;
     }
@@ -480,29 +482,63 @@ label {
         width: 95%;
         display: flex;
         flex-direction: column;
+        background-size: cover;
     }
 
-    .trailer{
-        width: 100%;
-    }
-
-    #sinopser{
+    #msg-integrantes{
         width: 95%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
 
-    .description{
+    .trailer{
         width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        margin: 0 auto;
+        padding: 20px;       
+    }
+
+    #msg-integrantes {
+        width: 95%;
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 18px;
+        line-height: 1.6;        
+    }
+
+    .description{
+        font-size: 18px;
+        line-height: 1.6;
     }
 
     .button{
         width: 100%;
         margin-top: 30px;
     }
-    .cards-content{
-        grid-template-columns: 1fr;
-        margin-top: 150px;
+    #msg-commits {
+        width: 95%;
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 18px;
+        line-height: 1.6;        
     }
+    .integrantes-cards-container{
+        max-width: 100%;
+        height: auto;
+        grid-template-columns: 3fr;
+        margin-top: 150px;
+        
+    }
+
+    .commits-cards-content{
+        grid-template-columns: 3fr;
+        margin-top: 150px;
+        background-size: cover;
+    }
+
+
 }
