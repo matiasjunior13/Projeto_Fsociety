@@ -3,7 +3,8 @@
 
 Este é o meu primeiro projeto desenvolvido com HTML e CSS. Foi um projeto realizado de forma autônoma, com o objetivo de aprimorar meus conhecimentos nas tecnologias de front-end e aplicar conceitos de design de forma prática.
 
-Sobre o Projeto
+Sobre o Projeto:
+
 O tema deste projeto foi inspirado em uma série da qual sou fã. Ao longo do desenvolvimento, busquei conciliar meu interesse pessoal com a prática de estudar e aplicar novos conceitos de web design. A ideia foi criar uma página com estrutura simples e visualmente atrativa, utilizando apenas HTML para a marcação e CSS para o estilo.
 
 Funcionalidades:
