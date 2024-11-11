@@ -242,11 +242,11 @@ li:hover {
 
 
 .commits-cards-container{
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    padding: 0 10px;
+    padding: 0px;
 }
 
 .commits-cards-content {
