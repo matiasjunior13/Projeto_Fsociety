@@ -242,7 +242,7 @@ li:hover {
 
 
 .commits-cards-container{
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
     margin-top: 20px;
